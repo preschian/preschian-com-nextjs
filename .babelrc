@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "transform-decorators-legacy"
+  ]
+  // "plugins": [
+  //   ["styled-components", {
+  //     "displayName": true,
+  //     "minify": true,
+  //     "ssr": true
+  //   }]
+  // ]
+}

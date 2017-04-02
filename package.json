@@ -1,0 +1,33 @@
+{
+  "name": "preschian-com-nextjs",
+  "version": "1.0.0",
+  "description": "server side rendering with ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next build && NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preschian/preschian-com-nextjs.git"
+  },
+  "author": "Preschian Febryantara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/preschian/preschian-com-nextjs/issues"
+  },
+  "homepage": "https://github.com/preschian/preschian-com-nextjs#readme",
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
+    "firebase": "^3.7.4",
+    "next": "^2.0.1",
+    "path-match": "^1.2.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
+  }
+}
