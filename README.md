@@ -1,4 +1,4 @@
-# preschian-com-vue
+# preschian-com-nextjs
 
 > server side rendering with ReactJS
 > https://preschian-com-nextjs.herokuapp.com/
