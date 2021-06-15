@@ -2,9 +2,9 @@ import firebase from 'firebase'
 
 try {
   firebase.initializeApp({
-    databaseURL: 'https://preschian-com.firebaseio.com'
+    databaseURL: 'https://preschian-com.firebaseio.com',
   })
-} catch(err) {
+} catch (err) {
   if (!/already exists/.test(err.message)) {
     console.error('Firebase initialization error', err.stack)
   }
@@ -13,9 +13,14 @@ try {
 const database = firebase.database()
 
 export const GetPosts = (page = 1, eachPage = 4) => {
-  const start = (eachPage * (page - 1) + 1)
+  const start = eachPage * (page - 1) + 1
 
-  return database.ref('/post').orderByChild('order').startAt(start).limitToFirst(eachPage).once('value')
+  return database
+    .ref('/post')
+    .orderByChild('order')
+    .startAt(start)
+    .limitToFirst(eachPage)
+    .once('value')
 }
 
 export const GetPostDetail = (slug) => {
@@ -23,5 +28,9 @@ export const GetPostDetail = (slug) => {
 }
 
 export const GetTotalPosts = () => {
-  return database.ref('/post').orderByChild('order').limitToLast(1).once('value')
+  return database
+    .ref('/post')
+    .orderByChild('order')
+    .limitToLast(1)
+    .once('value')
 }

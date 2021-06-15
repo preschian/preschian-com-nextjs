@@ -8,7 +8,7 @@ const ArticleBackground = styled.div`
   display: flex;
   justify-content: center;
   background-color: #111;
-  background-image: url('${props => props.image}');
+  background-image: url('${(props) => props.image}');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,13 +55,18 @@ const ArticleContent = styled.div`
     }
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-align: left;
   }
 
   img {
     display: block;
-    margin-left: calc((50rem - 80vw)/ 2);
+    margin-left: calc((50rem - 80vw) / 2);
     width: 80vw;
   }
 
@@ -83,7 +88,8 @@ const ArticleContent = styled.div`
     margin-top: 1rem;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 18px;
   }
 

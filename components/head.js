@@ -22,6 +22,10 @@ const Head = styled.h1`
 
 export default () => (
   <Container>
-    <Head><Link prefetch href="/"><a>Preschian Febryantara</a></Link></Head>
+    <Head>
+      <Link prefetch href="/">
+        <a>Preschian Febryantara</a>
+      </Link>
+    </Head>
   </Container>
 )

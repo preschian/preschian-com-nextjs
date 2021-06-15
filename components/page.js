@@ -23,8 +23,8 @@ const PageNav = styled.a`
   width: 2rem;
 
   &:hover {
-    background-color: #FFEE58;
-    border-color: #FFEE58;
+    background-color: #ffee58;
+    border-color: #ffee58;
   }
 `
 
@@ -34,7 +34,7 @@ const PageInfo = styled.p`
   text-transform: uppercase;
 `
 
-export default ({page, totalPages}) => {
+export default ({ page, totalPages }) => {
   let prevNav = <div></div>
   let nextNav = <div></div>
 
@@ -46,10 +46,12 @@ export default ({page, totalPages}) => {
     nextNav = <PageNav href={`/?page=${page + 1}`}>＞</PageNav>
   }
 
-  return(
+  return (
     <Page>
       {prevNav}
-      <PageInfo>Page {page} of {totalPages}</PageInfo>
+      <PageInfo>
+        Page {page} of {totalPages}
+      </PageInfo>
       {nextNav}
     </Page>
   )

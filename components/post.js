@@ -36,7 +36,7 @@ const PostItem = styled.div`
 `
 
 const PostBackground = styled.div`
-  background-image: url('${props => props.image}');
+  background-image: url('${(props) => props.image}');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +91,7 @@ export const PostTextTitle = styled.span`
 `
 
 export const PostTextMeta = styled.p`
-  color: #CCC;
+  color: #ccc;
   font-size: 0.75rem;
   letter-spacing: 1px;
   margin-top: 0.5rem;

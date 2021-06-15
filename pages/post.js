@@ -6,7 +6,7 @@ import { GetPostDetail } from '../utils/api'
 import Article from '../components/article'
 
 export default class ArticleDetail extends React.Component {
-  static async getInitialProps({ query: { slug }}) {
+  static async getInitialProps({ query: { slug } }) {
     const ref = await GetPostDetail(slug)
     const val = ref.val()
 

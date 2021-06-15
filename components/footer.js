@@ -14,7 +14,7 @@ const Footer = styled.div`
     margin: 0 0.5rem;
 
     &:hover {
-      color: #FFEE58;
+      color: #ffee58;
     }
   }
 
@@ -25,9 +25,17 @@ const Footer = styled.div`
 
 export default () => (
   <Footer>
-    <a href="https://twitter.com/preschian" target="_blank">twitter</a>
-    <a href="http://steamcommunity.com/id/preschian" target="_blank">steam</a>
-    <a href="https://github.com/preschian" target="_blank">github</a>
-    <a href="https://github.com/preschian/preschian-com/tree/ssr-next" target="_blank">source</a>
+    <a href="https://twitter.com/preschian" target="_blank">
+      twitter
+    </a>
+    <a href="http://steamcommunity.com/id/preschian" target="_blank">
+      steam
+    </a>
+    <a href="https://github.com/preschian" target="_blank">
+      github
+    </a>
+    <a href="https://github.com/preschian/preschian-com-nextjs" target="_blank">
+      source
+    </a>
   </Footer>
 )
