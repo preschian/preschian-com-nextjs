@@ -24,7 +24,7 @@
     "eslint": "^4.18.2",
     "eslint-plugin-react": "^6.10.3",
     "firebase": "^3.7.4",
-    "next": "^4.2.3",
+    "next": "^9.3.2",
     "path-match": "^1.2.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
