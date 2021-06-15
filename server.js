@@ -21,8 +21,7 @@ app.prepare().then(() => {
     }
 
     app.render(req, res, '/post', params)
-  })
-  .listen(port, (err) => {
+  }).listen(port, (err) => {
     if (err) throw err
 
     if (port === 3000) {

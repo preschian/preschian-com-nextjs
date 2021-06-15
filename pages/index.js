@@ -27,7 +27,7 @@ export default class Index extends React.Component {
     return {
       page: parseInt(query.page) || 1,
       result: result.reverse(),
-      totalPages: Math.ceil(getOrder / 4)
+      totalPages: Math.ceil(getOrder / 4),
     }
   }
 
